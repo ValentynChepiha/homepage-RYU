@@ -57,7 +57,7 @@ window.addEventListener("scroll", e => {
     ? goTopBtn.classList.add("dropdown-open")
     : goTopBtn.classList.remove("dropdown-open");
 
-  height - scrolled > coords * 1.1
+  height - scrolled > coords // * 1.1
     ? goBottomBtn.classList.add("dropdown-open")
     : goBottomBtn.classList.remove("dropdown-open");
 });

@@ -1,0 +1,64 @@
+:root {
+  --min-right-margin: 5px;
+  --navigate-size: 60px;
+}
+
+@media only screen and (max-width: 875px) {
+  .navigate-button {
+    right: var(--min-right-margin);
+  }
+
+  .avatar {
+    max-width: 9rem;
+  }
+
+}
+
+@media only screen and (min-width: 876px) and (max-width: 991px) {
+  .navigate-button {
+    right: calc((((100% - 723px) / 2) - var(--navigate-size))/2);
+  }
+
+  .avatar {
+    max-width: 10rem;
+  }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1089px) {
+  .navigate-button {
+    right: var(--min-right-margin);
+  }
+
+  .avatar {
+    max-width: 10rem;
+  }
+
+}
+
+@media only screen and (min-width: 1090px) and (max-width: 1199px) {
+  .navigate-button {
+    right: calc((((100% - 933px) / 2) - var(--navigate-size))/2);
+  }
+  .avatar {
+    max-width: 11rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1279px) {
+  .navigate-button {
+    right: var(--min-right-margin);
+  }
+
+  .avatar {
+    max-width: 12rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .navigate-button {
+    right: calc((((100% - 1127px) / 2) - var(--navigate-size))/2);
+  }
+
+  .avatar {
+    max-width: 13rem;
+  }
+}

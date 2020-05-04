@@ -1,3 +1,5 @@
+let arrData = ["person", "job", "resume", "quote"];
+
 const getContentLiWithYear = (data, part, docSelector, titleSelector) => {
   const result = data[part]
     .map(el => {
@@ -56,26 +58,20 @@ const getContentImageLang = (data, part, docSelector, titleSelector) => {
   titleElement.innerText = data.titles[part];
 };
 
+getContentByClass = (data, classSelector) => {
+  let titleElement = document.querySelector(classSelector);
+  titleElement.innerText = data;
+};
+
+getContentByArray = (data, arr) => {
+  arr.forEach(element => {
+    getContentByClass(data.titles[element], `.title-intro-${element}`);
+  });
+};
+
 const getDocument = (dataResume = resumeRyuEn) => {
-
-  if(dataResume.titles){
-
-    let titleSelector = '.title-intro-person';
-    let titleElement = document.querySelector(titleSelector);
-    titleElement.innerText = dataResume.titles['person'];
-
-    titleSelector = '.title-intro-job';
-    titleElement = document.querySelector(titleSelector);
-    titleElement.innerText = dataResume.titles['job'];
-
-    titleSelector = '.title-intro-resume';
-    titleElement = document.querySelector(titleSelector);
-    titleElement.innerText = dataResume.titles['resume'];
-
-    titleSelector = '.title-intro-quote';
-    titleElement = document.querySelector(titleSelector);
-    titleElement.innerText = dataResume.titles['quote'];
-
+  if (dataResume.titles) {
+    getContentByArray(dataResume, arrData);
   }
 
   if (dataResume.experience) {
