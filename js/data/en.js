@@ -1,6 +1,11 @@
 const
   resumeRyuEn = {
     'titles' : {
+      'person': 'RYU HOSHI (リュウ RYŪ)',
+      'job': 'the main protagonist of the Street Fighter series',
+      'resume': 'RESUME',
+      'quote': 'I have spent many years traveling across the world, fighting strong fighters and teaching myself new things. Now, I am finding rest.',
+
       'experience' : 'EXPERIENCE',
       'publications' : 'PUBLICATIONS',
       'achievements' : 'ACHIEVEMENTS',
