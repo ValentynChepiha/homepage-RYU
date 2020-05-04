@@ -1,0 +1,9 @@
+/* background */
+.background-ryu {
+  background: #bc932a url(../images/ryu-background.jpg) top center no-repeat;
+}
+
+.main-opacity {
+  background: none;
+  opacity: 0.8;
+}
